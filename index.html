@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Coco'Up — Chips de Coco Premium de Côte d'Ivoire</title>
+  <meta name="description" content="Coco'Up : chips de noix de coco ivoiriennes, croustillantes et 100% naturelles. Sans conservateurs, sans additifs. 3 saveurs : Gingembre, Ananas, Lait de Coco. Livraison à Abidjan." />
+  <meta name="keywords" content="chips de coco, noix de coco, Côte d'Ivoire, snack naturel, Abidjan, Coco'Up, snack healthy, bio, gingembre, ananas" />
+  <meta name="author" content="Prime Agence de Communication" />
+  <meta name="theme-color" content="#7B4A1E" />
+  <link rel="canonical" href="https://coco-up.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coco-up.vercel.app/" />
+  <meta property="og:title" content="Coco'Up — Chips de Coco Premium de Côte d'Ivoire" />
+  <meta property="og:description" content="La noix de coco ivoirienne transformée en chips croustillantes et savoureuses, 100% naturelles." />
+  <meta property="og:image" content="https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg" />
+  <meta property="og:locale" content="fr_CI" />
+  <meta property="og:site_name" content="Coco'Up" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Coco'Up — Chips de Coco Premium de Côte d'Ivoire" />
+  <meta name="twitter:description" content="La noix de coco ivoirienne transformée en chips croustillantes, 100% naturelles." />
+  <meta name="twitter:image" content="https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/brand/coco-up-logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Coco'Up",
+    "url": "https://coco-up.vercel.app/",
+    "logo": "https://coco-up.vercel.app/assets/images/brand/coco-up-logo.png",
+    "description": "Chips de noix de coco premium 100% naturelles, fabriquées en Côte d'Ivoire.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Abidjan", "addressCountry": "CI" },
+    "founder": { "@type": "Organization", "name": "Prime Agence de Communication" },
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader"><div style="text-align:center"><div class="loader__coco">🥥</div><p class="loader__text">Coco'Up</p></div></div>
+  <!-- Scroll progress -->
+  <div id="progress-bar"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Accueil Coco'Up">
+        <img src="assets/images/brand/coco-up-logo.png" alt="Logo Coco'Up" width="120" height="42" />
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Navigation principale">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="products.html" class="nav__link">Nos Saveurs</a>
+        <a href="about.html" class="nav__link">Notre Histoire</a>
+        <a href="benefits.html" class="nav__link">Bienfaits</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="https://wa.me/2250700000000?text=Bonjour%20Coco'Up%2C%20je%20souhaite%20commander%20%F0%9F%A5%A5" class="btn btn--primary nav__cta" target="_blank" rel="noopener">Commander</a>
+      </nav>
+
+      <div class="nav__tools">
+        <button class="theme-toggle" aria-label="Changer de thème"><i data-lucide="moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+      <span class="hero__leaf hero__leaf--1" aria-hidden="true">🌿</span>
+      <span class="hero__leaf hero__leaf--2" aria-hidden="true">🌴</span>
+
+      <div class="container hero__grid">
+        <div class="hero__content reveal" data-reveal="left">
+          <span class="badge">🥥 Made in Côte d'Ivoire • 100% Naturel</span>
+          <h1 class="hero__title">Le snack coco qui te fait <span class="text-green">craquer</span> a chaque bouchee</h1>
+          <p class="hero__desc">
+            Coco'Up, c'est la noix de coco ivoirienne transformée en chips croustillantes et
+            savoureuses — sans conservateurs, sans additifs, juste le goût authentique du coco.
+          </p>
+          <ul class="hero__list">
+            <li><i data-lucide="leaf"></i> Zéro conservateur</li>
+            <li>🇨🇮 Made in Côte d'Ivoire</li>
+          </ul>
+          <div class="hero__actions">
+            <a href="products.html" class="btn btn--primary">Découvrir nos chips</a>
+            <a href="https://wa.me/2250700000000?text=Bonjour%20Coco'Up%2C%20je%20souhaite%20commander%20%F0%9F%A5%A5" class="btn btn--whatsapp" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i> Commander sur WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero__media reveal" data-reveal="right">
+          <div class="hero__image-wrap float-slow">
+            <img src="assets/images/hero/hero-section.jpeg" alt="Sachet de chips de noix de coco Coco'Up saveur Ananas" width="900" height="900" fetchpriority="high" />
+          </div>
+          <div class="float-card float-card--1">
+            <span class="float-card__icon"><i data-lucide="leaf"></i></span>
+            <div><strong>100% Naturel</strong><small>Sans additifs</small></div>
+          </div>
+          <div class="float-card float-card--2">
+            <span class="float-card__icon"><i data-lucide="star"></i></span>
+            <div><strong>Croustillant</strong><small>À chaque bouchée</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BANDE INFO ===================== -->
+    <section class="strip">
+      <div class="container strip__grid">
+        <div class="strip__item reveal" data-reveal="up"><span>🥥</span> 100% Coco ivoirien</div>
+        <div class="strip__item reveal" data-reveal="up"><span><i data-lucide="ban"></i></span> Sans conservateurs</div>
+        <div class="strip__item reveal" data-reveal="up"><span><i data-lucide="dumbbell"></i></span> Riche en fibres</div>
+        <div class="strip__item reveal" data-reveal="up"><span><i data-lucide="package"></i></span> Livraison Abidjan</div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUITS ===================== -->
+    <section class="section products" id="produits">
+      <div class="container">
+        <div class="section__head reveal" data-reveal="up">
+          <span class="eyebrow">Nos saveurs</span>
+          <h2 class="section__title">Choisissez votre <span class="text-green">Coco'Up</span></h2>
+        </div>
+        <div class="products__grid">
+          <article class="product-card reveal" data-reveal="up">
+            <div class="product-card__media">
+              <img src="assets/images/products/coco-up-gingembre.jpeg" alt="Chips de coco au gingembre" loading="lazy" width="700" height="500" />
+              <span class="product-card__tag">100g</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Chips de Coco au Gingembre</h3>
+              <p>Le piquant naturel du gingembre ivoirien qui réveille la douceur du coco. Un duo intense et inoubliable.</p>
+              <a href="products.html#gingembre" class="btn btn--outline">Voir le produit</a>
+            </div>
+          </article>
+          <article class="product-card reveal" data-reveal="up">
+            <div class="product-card__media">
+              <img src="assets/images/products/coco-up-ananas.jpeg" alt="Chips de coco à l'ananas" loading="lazy" width="700" height="500" />
+              <span class="product-card__tag">100g</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Chips de Coco a l'Ananas</h3>
+              <p>La fraîcheur tropicale de l'ananas rencontre la richesse du coco. Un voyage gustatif sous les palmiers.</p>
+              <a href="products.html#ananas" class="btn btn--outline">Voir le produit</a>
+            </div>
+          </article>
+          <article class="product-card reveal" data-reveal="up">
+            <div class="product-card__media">
+              <img src="assets/images/products/coco-up-lait.jpeg" alt="Chips de coco au lait" loading="lazy" width="700" height="500" />
+              <span class="product-card__tag">100g</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Chips de Coco au Lait</h3>
+              <p>Onctueuse et douce, la saveur lait de coco pour un snack réconfortant à tout moment de la journée.</p>
+              <a href="products.html#lait" class="btn btn--outline">Voir le produit</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HISTOIRE ===================== -->
+    <section class="section story" id="histoire">
+      <div class="container story__grid">
+        <div class="story__media reveal" data-reveal="left">
+          <img src="https://images.unsplash.com/photo-1536657464919-892534f60d6e?auto=format&fit=crop&w=900&q=80" alt="Producteurs de noix de coco ivoiriens" loading="lazy" width="900" height="700" onerror="this.classList.add('img-fallback');this.removeAttribute('src');" />
+        </div>
+        <div class="story__content reveal" data-reveal="right">
+          <span class="eyebrow">Notre Histoire</span>
+          <h2 class="section__title">Nee de la richesse tropicale de notre terre</h2>
+          <p>Coco'Up est née d'une conviction simple : la noix de coco ivoirienne mérite d'être valorisée. Chaque sachet est préparé avec soin, à partir de cocos fraîchement récoltés chez des producteurs locaux sélectionnés.</p>
+          <p>Notre mission : transformer ce fruit emblématique en un snack moderne, sain et accessible — pour tous les styles de vie, à Abidjan et partout en Côte d'Ivoire.</p>
+          <div class="stats">
+            <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label">Coco ivoirien</span></div>
+            <div class="stat"><span class="stat__num" data-count="0">0</span><span class="stat__label">Conservateurs</span></div>
+            <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Saveurs</span></div>
+            <div class="stat"><span class="stat__num" data-count="100" data-suffix="g">0</span><span class="stat__label">Par sachet</span></div>
+          </div>
+          <p style="margin-top:1.6rem"><a href="about.html" class="btn btn--outline">Lire notre histoire</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BIENFAITS ===================== -->
+    <section class="section benefits" id="bienfaits">
+      <div class="container">
+        <div class="section__head reveal" data-reveal="up">
+          <span class="eyebrow eyebrow--light">Pourquoi Coco'Up</span>
+          <h2 class="section__title section__title--light">Bon pour vous, bon pour la planete</h2>
+        </div>
+        <div class="benefits__grid">
+          <article class="benefit-card reveal" data-reveal="up"><span class="benefit-card__icon">🥥</span><h3>100% Naturel</h3><p>Aucun conservateur, aucun additif. Juste le coco dans toute sa pureté naturelle.</p></article>
+          <article class="benefit-card reveal" data-reveal="up"><span class="benefit-card__icon"><i data-lucide="heart"></i></span><h3>Riche en fibres</h3><p>Aide à la digestion et procure une sensation de satiété durable.</p></article>
+          <article class="benefit-card reveal" data-reveal="up"><span class="benefit-card__icon"><i data-lucide="zap"></i></span><h3>Energie naturelle</h3><p>Les acides gras du coco fournissent une énergie rapide et naturelle.</p></article>
+          <article class="benefit-card reveal" data-reveal="up"><span class="benefit-card__icon"><i data-lucide="handshake"></i></span><h3>Agriculteurs locaux</h3><p>Chaque achat soutient les producteurs de coco ivoiriens.</p></article>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem" class="reveal" data-reveal="up"><a href="benefits.html" class="btn btn--whatsapp">Tous les bienfaits du coco</a></div>
+      </div>
+    </section>
+
+    <!-- ===================== PRIME AGENCE ===================== -->
+    <section class="section agency">
+      <div class="container agency__card reveal" data-reveal="up">
+        <img class="agency__logo" src="assets/images/brand/prime-agence.jpeg" alt="Logo Prime Agence de Communication" width="120" height="86" loading="lazy" />
+        <h2 class="section__title">Une creation de Prime Agence</h2>
+        <p>Coco'Up est un produit développé et porté par Prime Agence de Communication, agence ivoirienne spécialisée dans la création de marques locales à fort impact.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta" id="commander">
+      <div class="cta__blob" aria-hidden="true"></div>
+      <div class="container cta__inner reveal" data-reveal="up">
+        <h2 class="cta__title">Pret a craquer pour Coco'Up ?</h2>
+        <p class="cta__text">Commande maintenant et reçois tes chips directement chez toi à Abidjan.</p>
+        <a href="https://wa.me/2250700000000?text=Bonjour%20Coco'Up%2C%20je%20souhaite%20commander%20%F0%9F%A5%A5" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i> Commander sur WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo"><img src="assets/images/brand/coco-up-logo.png" alt="Logo Coco'Up" width="120" height="42" /></a>
+        <p class="footer__tag">Coco'Up — Chips de Coco de Côte d'Ivoire. Le goût authentique du coco, 100% naturel.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="products.html">Nos Saveurs</a></li>
+          <li><a href="about.html">Notre Histoire</a></li>
+          <li><a href="benefits.html">Bienfaits</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h4>Contact</h4>
+        <p><i data-lucide="map-pin"></i> Abidjan, Côte d'Ivoire</p>
+        <p><i data-lucide="message-circle"></i> <a href="https://wa.me/2250700000000" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p>Produit par Prime Agence de Communication</p>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>© 2025 Coco'Up. Tous droits réservés.</p></div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut"><i data-lucide="arrow-up"></i></button>
+  <a href="https://wa.me/2250700000000?text=Bonjour%20Coco'Up%20%F0%9F%A5%A5" class="wa-float" target="_blank" rel="noopener" aria-label="Commander sur WhatsApp"><i data-lucide="message-circle"></i></a>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

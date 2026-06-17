@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact — Coco'Up | Commander à Abidjan</title>
+  <meta name="description" content="Contactez Coco'Up : WhatsApp, email et localisation à Abidjan. Formulaire de contact et FAQ rapide pour commander vos chips de coco." />
+  <meta name="theme-color" content="#7B4A1E" />
+  <link rel="canonical" href="https://coco-up.vercel.app/contact" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coco-up.vercel.app/contact" />
+  <meta property="og:title" content="Contact — Coco'Up" />
+  <meta property="og:description" content="Contactez Coco'Up pour commander vos chips de coco à Abidjan." />
+  <meta property="og:image" content="https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Coco'Up",
+    "image": "https://coco-up.vercel.app/assets/images/brand/coco-up-logo.png",
+    "telephone": "+2250700000000",
+    "email": "contact@coco-up.ci",
+    "address": { "@type": "PostalAddress", "addressLocality": "Abidjan", "addressCountry": "CI" }
+  }
+  </script>
+</head>
+<body>
+  <div id="loader"><div style="text-align:center"><div class="loader__coco">🥥</div><p class="loader__text">Coco'Up</p></div></div>
+  <div id="progress-bar"></div>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Accueil Coco'Up"><img src="assets/images/brand/coco-up-logo.png" alt="Logo Coco'Up" width="120" height="42" /></a>
+      <nav class="nav__menu" id="navMenu" aria-label="Navigation principale">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="products.html" class="nav__link">Nos Saveurs</a>
+        <a href="about.html" class="nav__link">Notre Histoire</a>
+        <a href="benefits.html" class="nav__link">Bienfaits</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="https://wa.me/2250700000000?text=Bonjour%20Coco'Up%20%F0%9F%A5%A5" class="btn btn--primary nav__cta" target="_blank" rel="noopener">Commander</a>
+      </nav>
+      <div class="nav__tools">
+        <button class="theme-toggle" aria-label="Changer de thème"><i data-lucide="moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> / Contact</p>
+        <h1 class="page-hero__title">Contactez-nous</h1>
+        <p class="page-hero__text">Une question, une commande, un partenariat ? Nous répondons rapidement.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact__grid">
+        <!-- Coordonnées -->
+        <div class="reveal" data-reveal="left">
+          <a class="contact-card" href="https://wa.me/2250700000000" target="_blank" rel="noopener">
+            <span class="contact-card__icon"><i data-lucide="message-circle"></i></span>
+            <div><h3>WhatsApp</h3><p>+225 07 00 00 00 00</p></div>
+          </a>
+          <a class="contact-card" href="mailto:contact@coco-up.ci">
+            <span class="contact-card__icon"><i data-lucide="mail"></i></span>
+            <div><h3>Email</h3><p>contact@coco-up.ci</p></div>
+          </a>
+          <div class="contact-card">
+            <span class="contact-card__icon"><i data-lucide="map-pin"></i></span>
+            <div><h3>Localisation</h3><p>Abidjan, Côte d'Ivoire</p></div>
+          </div>
+
+          <!-- FAQ rapide -->
+          <div class="accordion" style="margin-top:2rem">
+            <div class="accordion__item"><button class="accordion__header">Livrez-vous à Abidjan ?<span class="accordion__icon"><i data-lucide="plus"></i></span></button><div class="accordion__body"><p>Oui, nous livrons partout à Abidjan. Contactez-nous sur WhatsApp pour organiser votre livraison.</p></div></div>
+            <div class="accordion__item"><button class="accordion__header">Quel est le délai de réponse ?<span class="accordion__icon"><i data-lucide="plus"></i></span></button><div class="accordion__body"><p>Nous répondons généralement en moins de 24h, et bien plus vite sur WhatsApp.</p></div></div>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="reveal" data-reveal="right">
+          <form class="contact-form" id="contactForm" data-whatsapp="2250700000000" novalidate>
+            <div class="form-success" id="formSuccess"><i data-lucide="check-circle"></i> Merci ! Votre message a bien été pris en compte. Nous vous répondons très vite.</div>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Votre nom" required />
+              <span class="error-msg">Merci d'indiquer votre nom (2 caractères min).</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="vous@email.com" required />
+              <span class="error-msg">Merci d'indiquer une adresse email valide.</span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject">
+                <option>Commande</option>
+                <option>Question produit</option>
+                <option>Partenariat</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+              <span class="error-msg">Votre message doit contenir au moins 10 caractères.</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Carte Google Maps -->
+      <div class="container">
+        <div class="map-wrap reveal" data-reveal="up">
+          <iframe title="Localisation Coco'Up à Abidjan" src="https://www.google.com/maps?q=Abidjan,Côte+d'Ivoire&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="index.html" class="logo"><img src="assets/images/brand/coco-up-logo.png" alt="Logo Coco'Up" width="120" height="42" /></a><p class="footer__tag">Coco'Up — Chips de Coco de Côte d'Ivoire. Le goût authentique du coco, 100% naturel.</p></div>
+      <div><h4>Navigation</h4><ul class="footer__links"><li><a href="products.html">Nos Saveurs</a></li><li><a href="about.html">Notre Histoire</a></li><li><a href="benefits.html">Bienfaits</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__info"><h4>Contact</h4><p><i data-lucide="map-pin"></i> Abidjan, Côte d'Ivoire</p><p><i data-lucide="message-circle"></i> <a href="https://wa.me/2250700000000" target="_blank" rel="noopener">WhatsApp</a></p><p>Produit par Prime Agence de Communication</p></div>
+    </div>
+    <div class="footer__bottom"><p>© 2025 Coco'Up. Tous droits réservés.</p></div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut"><i data-lucide="arrow-up"></i></button>
+  <a href="https://wa.me/2250700000000?text=Bonjour%20Coco'Up%20%F0%9F%A5%A5" class="wa-float" target="_blank" rel="noopener" aria-label="Commander sur WhatsApp"><i data-lucide="message-circle"></i></a>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
