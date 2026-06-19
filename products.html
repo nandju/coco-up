@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Performance SEO -->
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
   <title>Nos Saveurs — Coco'Up | Chips de Coco Gingembre, Ananas, Lait</title>
   <meta name="description" content="Découvrez les 3 saveurs Coco'Up : Gingembre, Ananas et Lait de Coco. Chips de noix de coco 100% naturelles, 100g, sans conservateurs. Commandez à Abidjan." />
   <meta name="theme-color" content="#7B4A1E" />
@@ -32,6 +38,8 @@
   <meta name="twitter:image" content="https://coco-up.vercel.app/assets/images/products/coco-up-gingembre.jpeg" />
 
   <link rel="icon" type="image/png" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -40,11 +48,95 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      { "@type": "Product", "name": "Chips de Coco au Gingembre", "weight": "100g", "brand": { "@type": "Brand", "name": "Coco'Up" }, "areaServed": "Abidjan, Côte d'Ivoire", "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "XOF", "availability": "https://schema.org/InStock" } },
-      { "@type": "Product", "name": "Chips de Coco à l'Ananas", "weight": "100g", "brand": { "@type": "Brand", "name": "Coco'Up" }, "areaServed": "Abidjan, Côte d'Ivoire", "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "XOF", "availability": "https://schema.org/InStock" } },
-      { "@type": "Product", "name": "Chips de Coco au Lait", "weight": "100g", "brand": { "@type": "Brand", "name": "Coco'Up" }, "areaServed": "Abidjan, Côte d'Ivoire", "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "XOF", "availability": "https://schema.org/InStock" } }
+    "@graph": [
+      {
+        "@type": "ItemList",
+        "@id": "https://coco-up.vercel.app/products#itemlist",
+        "name": "Nos Saveurs Coco'Up",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Chips de Coco au Gingembre",
+              "description": "Chips de noix de coco au gingembre ivoirien. 100g, sans conservateurs, sans additifs.",
+              "image": "https://coco-up.vercel.app/assets/images/products/coco-up-gingembre.jpeg",
+              "sku": "COCO-GINGER-100",
+              "weight": { "@type": "QuantitativeValue", "value": "100", "unitCode": "GRM" },
+              "brand": { "@type": "Brand", "name": "Coco'Up" },
+              "manufacturer": { "@type": "Organization", "name": "Coco'Up" },
+              "areaServed": { "@type": "City", "name": "Abidjan" },
+              "offers": {
+                "@type": "Offer",
+                "price": "2000",
+                "priceCurrency": "XOF",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "seller": { "@type": "Organization", "name": "Coco'Up" },
+                "url": "https://coco-up.vercel.app/products#gingembre"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Chips de Coco à l'Ananas",
+              "description": "Chips de noix de coco à l'ananas tropical. 100g, sans conservateurs, sans additifs.",
+              "image": "https://coco-up.vercel.app/assets/images/products/coco-up-ananas.jpeg",
+              "sku": "COCO-PINE-100",
+              "weight": { "@type": "QuantitativeValue", "value": "100", "unitCode": "GRM" },
+              "brand": { "@type": "Brand", "name": "Coco'Up" },
+              "manufacturer": { "@type": "Organization", "name": "Coco'Up" },
+              "areaServed": { "@type": "City", "name": "Abidjan" },
+              "offers": {
+                "@type": "Offer",
+                "price": "2000",
+                "priceCurrency": "XOF",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "seller": { "@type": "Organization", "name": "Coco'Up" },
+                "url": "https://coco-up.vercel.app/products#ananas"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Chips de Coco au Lait",
+              "description": "Chips de noix de coco au lait de coco crémeux. 100g, sans conservateurs, sans additifs.",
+              "image": "https://coco-up.vercel.app/assets/images/products/coco-up-lait.jpeg",
+              "sku": "COCO-MILK-100",
+              "weight": { "@type": "QuantitativeValue", "value": "100", "unitCode": "GRM" },
+              "brand": { "@type": "Brand", "name": "Coco'Up" },
+              "manufacturer": { "@type": "Organization", "name": "Coco'Up" },
+              "areaServed": { "@type": "City", "name": "Abidjan" },
+              "offers": {
+                "@type": "Offer",
+                "price": "2000",
+                "priceCurrency": "XOF",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "seller": { "@type": "Organization", "name": "Coco'Up" },
+                "url": "https://coco-up.vercel.app/products#lait"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://coco-up.vercel.app/#organization",
+        "name": "Coco'Up",
+        "url": "https://coco-up.vercel.app/",
+        "logo": { "@type": "ImageObject", "url": "https://coco-up.vercel.app/assets/images/brand/coco-up-logo.png", "width": 512, "height": 512 },
+        "brand": { "@type": "Brand", "name": "Coco'Up" },
+        "sameAs": ["https://wa.me/2250150255453"]
+      }
     ]
   }
   </script>

@@ -4,8 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Performance SEO -->
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="preload" as="image" href="assets/images/hero/hero-section.jpeg" type="image/jpeg" fetchpriority="high" />
+
   <!-- SEO -->
-  <title>Coco'Up — Chips de Coco Premium de Côte d'Ivoire</title>
+  <title>Coco'Up | Chips de Coco Premium — Côte d'Ivoire</title>
   <meta name="description" content="Coco'Up : chips de noix de coco ivoiriennes, croustillantes et 100% naturelles. Sans conservateurs, sans additifs. 3 saveurs : Gingembre, Ananas, Lait de Coco. Livraison à Abidjan." />
   <meta name="keywords" content="chips de coco, noix de coco, Côte d'Ivoire, snack naturel, Abidjan, Coco'Up, snack healthy, bio, gingembre, ananas" />
   <meta name="author" content="Prime Agence de Communication" />
@@ -37,6 +44,8 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,18 +54,129 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Schema.org JSON-LD : Organization + LocalBusiness + Products -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Coco'Up",
-    "url": "https://coco-up.vercel.app/",
-    "logo": "https://coco-up.vercel.app/assets/images/brand/coco-up-logo.png",
-    "description": "Chips de noix de coco premium 100% naturelles, fabriquées en Côte d'Ivoire.",
-    "address": { "@type": "PostalAddress", "addressLocality": "Abidjan", "addressCountry": "CI" },
-    "founder": { "@type": "Organization", "name": "Prime Agence de Communication" },
-    "sameAs": []
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://coco-up.vercel.app/#organization",
+        "name": "Coco'Up",
+        "url": "https://coco-up.vercel.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://coco-up.vercel.app/assets/images/brand/coco-up-logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg",
+        "description": "Coco'Up — Chips de noix de coco premium 100% naturelles, fabriquées en Côte d'Ivoire. Sans conservateurs, sans additifs.",
+        "slogan": "Le goût authentique du coco",
+        "brand": { "@type": "Brand", "name": "Coco'Up" },
+        "founder": { "@type": "Organization", "name": "Prime Agence de Communication" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abidjan",
+          "addressCountry": "CI",
+          "addressRegion": "Abidjan"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+2250150255453",
+          "contactType": "Commandes et livraisons",
+          "availableLanguage": ["French"],
+          "areaServed": "Abidjan, Côte d'Ivoire"
+        },
+        "sameAs": ["https://wa.me/2250150255453"]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://coco-up.vercel.app/#localbusiness",
+        "name": "Coco'Up",
+        "url": "https://coco-up.vercel.app/",
+        "telephone": "+2250150255453",
+        "email": "contact@coco-up.ci",
+        "priceRange": "2000 XOF",
+        "image": "https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg",
+        "description": "Chips de noix de coco premium fabriquées en Côte d'Ivoire. 3 saveurs : Gingembre, Ananas, Lait de Coco. Livraison à Abidjan.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abidjan",
+          "addressCountry": "CI",
+          "addressRegion": "Abidjan"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "5.348",
+          "longitude": "-4.027"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Abidjan" },
+          { "@type": "Place", "name": "Cocody" },
+          { "@type": "Place", "name": "Marcory" },
+          { "@type": "Place", "name": "Plateau" },
+          { "@type": "Place", "name": "Yopougon" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Chips de Coco",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Chips de Coco au Gingembre",
+                "description": "Chips de noix de coco au gingembre ivoirien, 100g, sans conservateurs.",
+                "image": "https://coco-up.vercel.app/assets/images/products/coco-up-gingembre.jpeg",
+                "brand": { "@type": "Brand", "name": "Coco'Up" },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "2000",
+                  "priceCurrency": "XOF",
+                  "availability": "https://schema.org/InStock",
+                  "priceValidUntil": "2026-12-31"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Chips de Coco à l'Ananas",
+                "description": "Chips de noix de coco à l'ananas tropical, 100g, sans conservateurs.",
+                "image": "https://coco-up.vercel.app/assets/images/products/coco-up-ananas.jpeg",
+                "brand": { "@type": "Brand", "name": "Coco'Up" },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "2000",
+                  "priceCurrency": "XOF",
+                  "availability": "https://schema.org/InStock",
+                  "priceValidUntil": "2026-12-31"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Chips de Coco au Lait",
+                "description": "Chips de noix de coco au lait de coco crémeux, 100g, sans conservateurs.",
+                "image": "https://coco-up.vercel.app/assets/images/products/coco-up-lait.jpeg",
+                "brand": { "@type": "Brand", "name": "Coco'Up" },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "2000",
+                  "priceCurrency": "XOF",
+                  "availability": "https://schema.org/InStock",
+                  "priceValidUntil": "2026-12-31"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
   </script>
 </head>

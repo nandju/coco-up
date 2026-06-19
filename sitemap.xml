@@ -1,38 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://coco-up.vercel.app/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg</image:loc>
+      <image:title>Chips de noix de coco Coco'Up — Marque ivoirienne premium</image:title>
+      <image:caption>Sachet de chips de coco Coco'Up, 100% naturel, fabriqué en Côte d'Ivoire</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://coco-up.vercel.app/products</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://coco-up.vercel.app/assets/images/products/coco-up-gingembre.jpeg</image:loc>
+      <image:title>Chips de coco au gingembre Coco'Up</image:title>
+      <image:caption>Chips de noix de coco au gingembre ivoirien, 100g, 2 000 FCFA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://coco-up.vercel.app/assets/images/products/coco-up-ananas.jpeg</image:loc>
+      <image:title>Chips de coco à l'ananas Coco'Up</image:title>
+      <image:caption>Chips de noix de coco à l'ananas tropical, 100g, 2 000 FCFA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://coco-up.vercel.app/assets/images/products/coco-up-lait.jpeg</image:loc>
+      <image:title>Chips de coco au lait Coco'Up</image:title>
+      <image:caption>Chips de noix de coco au lait de coco crémeux, 100g, 2 000 FCFA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://coco-up.vercel.app/about</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg</image:loc>
+      <image:title>Histoire de Coco'Up — Marque ivoirienne de chips de coco</image:title>
+      <image:caption>Coco'Up valorise la noix de coco locale de Côte d'Ivoire</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://coco-up.vercel.app/benefits</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coco-up.vercel.app/faq</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://coco-up.vercel.app/contact</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

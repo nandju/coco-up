@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Performance SEO -->
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
   <title>FAQ — Coco'Up | Questions fréquentes</title>
   <meta name="description" content="Toutes les réponses sur Coco'Up : où acheter, ingrédients, parfums, livraison et conservation des chips de noix de coco." />
   <meta name="theme-color" content="#7B4A1E" />
@@ -32,6 +38,8 @@
   <meta name="twitter:image" content="https://coco-up.vercel.app/assets/images/hero/hero-section.jpeg" />
 
   <link rel="icon" type="image/png" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/brand/coco-up-logo.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -40,13 +48,70 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "Où acheter Coco'Up ?", "acceptedAnswer": { "@type": "Answer", "text": "Directement via WhatsApp. Nous livrons à Abidjan et dans toute la Côte d'Ivoire." } },
-      { "@type": "Question", "name": "Quels sont les ingrédients ?", "acceptedAnswer": { "@type": "Answer", "text": "De la noix de coco ivoirienne et une touche de saveur naturelle. Sans conservateurs ni additifs." } },
-      { "@type": "Question", "name": "Quels sont les parfums ?", "acceptedAnswer": { "@type": "Answer", "text": "Trois saveurs : Gingembre, Ananas et Lait de Coco." } },
-      { "@type": "Question", "name": "La livraison est-elle disponible ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, livraison disponible à Abidjan et partout en Côte d'Ivoire." } },
-      { "@type": "Question", "name": "Comment conserver le produit ?", "acceptedAnswer": { "@type": "Answer", "text": "Conservez le sachet dans un endroit sec, à l'abri de la chaleur. Refermez bien après ouverture." } }
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "@id": "https://coco-up.vercel.app/faq#faqpage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Où acheter Coco'Up ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Directement via WhatsApp au +225 01 50 25 54 53. Nous livrons à Abidjan (Cocody, Marcory, Plateau, Yopougon) et dans toute la Côte d'Ivoire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les ingrédients des chips de coco Coco'Up ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "100% noix de coco ivoirienne et une touche de saveur naturelle (gingembre, ananas ou lait de coco). Sans conservateurs, sans additifs, sans colorants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels parfums de chips de coco sont disponibles ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trois saveurs uniques : Gingembre (piquant et réconfortant), Ananas (fruité et tropical) et Lait de Coco (crémeux et doux). Chaque sachet contient 100g."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "La livraison est-elle disponible à Abidjan ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, la livraison est disponible à Abidjan et partout en Côte d'Ivoire. Commandez via WhatsApp et recevez vos chips directement chez vous."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment conserver les chips de coco Coco'Up ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Conservez le sachet dans un endroit sec et frais, à l'abri de la chaleur et de l'humidité. Refermez bien le sachet après ouverture pour préserver le croquant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le prix des chips de coco Coco'Up ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chaque sachet de 100g est vendu à 2 000 FCFA. Commandez directement par WhatsApp au +225 01 50 25 54 53."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://coco-up.vercel.app/#organization",
+        "name": "Coco'Up",
+        "url": "https://coco-up.vercel.app/",
+        "logo": { "@type": "ImageObject", "url": "https://coco-up.vercel.app/assets/images/brand/coco-up-logo.png", "width": 512, "height": 512 },
+        "brand": { "@type": "Brand", "name": "Coco'Up" },
+        "sameAs": ["https://wa.me/2250150255453"]
+      }
     ]
   }
   </script>

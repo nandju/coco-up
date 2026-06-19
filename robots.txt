@@ -1,5 +1,17 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/fonts/
+Crawl-delay: 1
 
+User-agent: Googlebot
+Allow: /
+Disallow: /404.html
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+Host: https://coco-up.vercel.app
 Sitemap: https://coco-up.vercel.app/sitemap.xml
